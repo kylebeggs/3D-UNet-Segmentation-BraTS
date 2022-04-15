@@ -1,0 +1,1 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QYou can use a 2D UNet and segment slice by slice or a true 3D UNet which uses 3D convolutions.\\E$"}

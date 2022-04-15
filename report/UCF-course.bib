@@ -1,0 +1,175 @@
+
+@inproceedings{aziziBigSelfSupervisedModels2021,
+  title = {Big {{Self-Supervised Models Advance Medical Image Classification}}},
+  booktitle = {2021 {{IEEE}}/{{CVF International Conference}} on {{Computer Vision}} ({{ICCV}})},
+  author = {Azizi, Shekoofeh and Mustafa, Basil and Ryan, Fiona and Beaver, Zachary and Freyberg, Jan and Deaton, Jonathan and Loh, Aaron and Karthikesalingam, Alan and Kornblith, Simon and Chen, Ting and Natarajan, Vivek and Norouzi, Mohammad},
+  year = {2021},
+  month = oct,
+  pages = {3458--3468},
+  publisher = {{IEEE}},
+  address = {{Montreal, QC, Canada}},
+  doi = {10.1109/ICCV48922.2021.00346},
+  abstract = {Self-supervised pretraining followed by supervised finetuning has seen success in image recognition, especially when labeled examples are scarce, but has received limited attention in medical image analysis. This paper studies the effectiveness of self-supervised learning as a pretraining strategy for medical image classification. We conduct experiments on two distinct tasks: dermatology condition classification from digital camera images and multilabel chest X-ray classification, and demonstrate that selfsupervised learning on ImageNet, followed by additional self-supervised learning on unlabeled domain-specific medical images significantly improves the accuracy of medical image classifiers. We introduce a novel Multi-Instance Contrastive Learning (MICLe) method that uses multiple images of the underlying pathology per patient case, when available, to construct more informative positive pairs for self-supervised learning. Combining our contributions, we achieve an improvement of 6.7\% in top-1 accuracy and an improvement of 1.1\% in mean AUC on dermatology and chest X-ray classification respectively, outperforming strong supervised baselines pretrained on ImageNet. In addition, we show that big self-supervised models are robust to distribution shift and can learn efficiently with a small number of labeled medical images.},
+  isbn = {978-1-66542-812-5},
+  langid = {english},
+  file = {/Users/kylebeggs/Zotero/storage/NLWGMK8U/Azizi et al. - 2021 - Big Self-Supervised Models Advance Medical Image C.pdf}
+}
+
+@article{dazaRobustGeneralMedical2021,
+  title = {Towards {{Robust General Medical Image Segmentation}}},
+  author = {Daza, Laura and P{\'e}rez, Juan C. and Arbel{\'a}ez, Pablo},
+  year = {2021},
+  doi = {10.1007/978-3-030-87199-4_1},
+  abstract = {The reliability of Deep Learning systems depends on their accuracy but also on their robustness against adversarial perturbations to the input data. Several attacks and defenses have been proposed to improve the performance of Deep Neural Networks under the presence of adversarial noise in the natural image domain. However, robustness in computer-aided diagnosis for volumetric data has only been explored for specific tasks and with limited attacks. We propose a new framework to assess the robustness of general medical image segmentation systems. Our contributions are two-fold: (i) we propose a new benchmark to evaluate robustness in the context of the Medical Segmentation Decathlon (MSD) by extending the recent AutoAttack natural image classification framework to the domain of volumetric data segmentation, and (ii) we present a novel lattice architecture for RObust Generic medical image segmentation (ROG). Our results show that ROG is capable of generalizing across different tasks of the MSD and largely surpasses the state-of-the-art under sophisticated adversarial attacks.},
+  langid = {english},
+  file = {/Users/kylebeggs/Zotero/storage/GECV9GRH/Daza et al. - 2021 - Medical Image Computing and Computer Assisted Inte.pdf;/Users/kylebeggs/Zotero/storage/3JEI7EBQ/10.html}
+}
+
+@article{fangIncrementalCrossviewMutual2021,
+  title = {Incremental {{Cross-view Mutual Distillation}} for {{Self-supervised Medical CT Synthesis}}},
+  author = {Fang, Chaowei and Wang, Liang and Zhang, Dingwen and Xu, Jun and Yuan, Yixuan and Han, Junwei},
+  year = {2021},
+  month = dec,
+  journal = {arXiv:2112.10325 [cs, eess]},
+  eprint = {2112.10325},
+  eprinttype = {arxiv},
+  primaryclass = {cs, eess},
+  abstract = {Due to the constraints of the imaging device and high cost in operation time, computer tomography (CT) scans are usually acquired with low intra-slice resolution. Improving the intra-slice resolution is beneficial to the disease diagnosis for both human experts and computer-aided systems. To this end, this paper builds a novel medical slice synthesis to increase the between-slice resolution. Considering that the ground-truth intermediate medical slices are always absent in clinical practice, we introduce the incremental cross-view mutual distillation strategy to accomplish this task in the self-supervised learning manner. Specifically, we model this problem from three different views: slice-wise interpolation from axial view and pixel-wise interpolation from coronal and sagittal views. Under this circumstance, the models learned from different views can distill valuable knowledge to guide the learning processes of each other. We can repeat this process to make the models synthesize intermediate slice data with increasing inter-slice resolution. To demonstrate the effectiveness of the proposed approach, we conduct comprehensive experiments on a large-scale CT dataset. Quantitative and qualitative comparison results show that our method outperforms state-of-the-art algorithms by clear margins.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Electrical Engineering and Systems Science - Image and Video Processing},
+  file = {/Users/kylebeggs/Zotero/storage/Q8HVUZ52/Fang et al. - 2021 - Incremental Cross-view Mutual Distillation for Sel.pdf;/Users/kylebeggs/Zotero/storage/DB9URZ62/2112.html}
+}
+
+@article{galdranBalancedMixUpHighlyImbalanced2021,
+  title = {Balanced-{{MixUp}} for {{Highly Imbalanced Medical Image Classification}}},
+  author = {Galdran, Adrian and Carneiro, Gustavo and Ballester, Miguel A. Gonz{\'a}lez},
+  year = {2021},
+  month = sep,
+  journal = {arXiv:2109.09850 [cs]},
+  eprint = {2109.09850},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  abstract = {Highly imbalanced datasets are ubiquitous in medical image classification problems. In such problems, it is often the case that rare classes associated to less prevalent diseases are severely under-represented in labeled databases, typically resulting in poor performance of machine learning algorithms due to overfitting in the learning process. In this paper, we propose a novel mechanism for sampling training data based on the popular MixUp regularization technique, which we refer to as Balanced-MixUp. In short, Balanced-MixUp simultaneously performs regular (i.e., instance-based) and balanced (i.e., class-based) sampling of the training data. The resulting two sets of samples are then mixed-up to create a more balanced training distribution from which a neural network can effectively learn without incurring in heavily under-fitting the minority classes. We experiment with a highly imbalanced dataset of retinal images (55K samples, 5 classes) and a long-tail dataset of gastro-intestinal video frames (10K images, 23 classes), using two CNNs of varying representation capabilities. Experimental results demonstrate that applying Balanced-MixUp outperforms other conventional sampling schemes and loss functions specifically designed to deal with imbalanced data. Code is released at https://github.com/agaldran/balanced\_mixup .},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/Users/kylebeggs/Zotero/storage/ZVMDMAWY/Galdran et al. - 2021 - Balanced-MixUp for Highly Imbalanced Medical Image.pdf}
+}
+
+@article{houRATCHETMedicalTransformer2021,
+  title = {{{RATCHET}}: {{Medical Transformer}} for {{Chest X-ray Diagnosis}} and {{Reporting}}},
+  author = {Hou, Benjamin and Kaissis, Georgios and Summers, Ronald M. and Kainz, Bernhard},
+  year = {2021},
+  doi = {10.1007/978-3-030-87234-2_28},
+  abstract = {Chest radiographs are one of the most common diagnostic modalities in clinical routine. It can be done cheaply, requires minimal equipment, and the image can be diagnosed by every radiologists. However, the number of chest radiographs obtained on a daily basis can easily overwhelm the available clinical capacities. We propose RATCHET: RAdiological Text Captioning for Human Examined Thoraces. RATCHET is a CNN-RNN-based medical transformer that is trained end-to-end. It is capable of extracting image features from chest radiographs, and generates medically accurate text reports that fit seamlessly into clinical work flows. The model is evaluated for its natural language generation ability using common metrics from NLP literature, as well as its medically accuracy through a surrogate report classification task. The model is available for download at: http://www.github.com/farrell236/RATCHET.},
+  langid = {english},
+  file = {/Users/kylebeggs/Zotero/storage/QKHWUXAF/Hou et al. - 2021 - Medical Image Computing and Computer Assisted Inte.pdf;/Users/kylebeggs/Zotero/storage/ZBCC99B4/10.html}
+}
+
+@inproceedings{kerfootLeftVentricleQuantificationUsing2019,
+  title = {Left-{{Ventricle Quantification Using Residual U-Net}}},
+  booktitle = {Statistical {{Atlases}} and {{Computational Models}} of the {{Heart}}. {{Atrial Segmentation}} and {{LV Quantification Challenges}}},
+  author = {Kerfoot, Eric and Clough, James and Oksuz, Ilkay and Lee, Jack and King, Andrew P. and Schnabel, Julia A.},
+  editor = {Pop, Mihaela and Sermesant, Maxime and Zhao, Jichao and Li, Shuo and McLeod, Kristin and Young, Alistair and Rhode, Kawal and Mansi, Tommaso},
+  year = {2019},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {371--380},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-030-12029-0_40},
+  abstract = {Estimating dimensional measurements of the left ventricle provides diagnostic values which can be used to assess cardiac health and identify certain pathologies. In this paper we describe our methodology of calculating measurements from left ventricle segmentations automatically generated using deep learning. We use a U-net convolutional neural network architecture built from residual units to segment the left ventricle and then process these segmentations to estimate the area of the cavity and myocardium, the dimensions of the cavity, and the thickness of the myocardium. Determining if an image is part of the diastolic or systolic portion of the cardiac cycle is done by analysing the cavity volume. The quality of our results are dependent on our training regime where we have generated a large derivative dataset by augmenting the original images with free-form deformations. Our expanded training set, in conjunction with simple affine image transforms, creates a sufficiently large training population to prevent over-fitting of the network while still creating an accurate and robust segmentation network. Assessing our method on the STACOM18 LVQuan challenge dataset we find that it significantly outperforms the previously published state-of-the-art on a 5-fold validation all tasks considered.},
+  isbn = {978-3-030-12029-0},
+  langid = {english},
+  keywords = {Cardiac MR,Cardiac quantification,Convolutional neural networks}
+}
+
+@incollection{liuCOVID19DiagnosisPrognosis2021,
+  title = {Beyond {{COVID-19 Diagnosis}}: {{Prognosis}} with {{Hierarchical Graph Representation Learning}}},
+  shorttitle = {Beyond {{COVID-19 Diagnosis}}},
+  booktitle = {Medical {{Image Computing}} and {{Computer Assisted Intervention}} \textendash{} {{MICCAI}} 2021},
+  author = {Liu, Chen and Cui, Jinze and Gan, Dailin and Yin, Guosheng},
+  editor = {{de Bruijne}, Marleen and Cattin, Philippe C. and Cotin, St{\'e}phane and Padoy, Nicolas and Speidel, Stefanie and Zheng, Yefeng and Essert, Caroline},
+  year = {2021},
+  volume = {12907},
+  pages = {283--292},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-030-87234-2_27},
+  abstract = {Coronavirus disease 2019 (COVID-19), the pandemic that is spreading fast globally, has caused over 181 million confirmed cases. Apart from the reverse transcription polymerase chain reaction (RT-PCR), the chest computed tomography (CT) is viewed as a standard and effective tool for disease diagnosis and progression monitoring. We propose a diagnosis and prognosis model based on graph convolutional networks (GCNs). The chest CT scan of a patient, typically involving hundreds of sectional images in a sequential order, is formulated as a densely connected weighted graph. A novel distance aware pooling is proposed to abstract the node information hierarchically, which is robust and efficient for such densely connected graphs. Our method, combining GCNs and distance aware pooling, can integrate the information from all slices in the chest CT scans for optimal decision making, which leads to the state-of-the-art accuracy in the COVID-19 diagnosis and prognosis. With less than 1\% of the total number of parameters in the baseline 3D ResNet model, our method achieves 94.8\% accuracy for diagnosis, which represents a 2.4\% improvement over the baseline on the same dataset. In addition, we can localize the most informative slices with disease lesions for COVID-19 within a large sequence of chest CT images. The proposed model can produce visual explanations for the diagnosis and prognosis, making the decision more transparent and explainable, while RT-PCR only leads to the test result with no prognosis information. The prognosis analysis can help hospitals or clinical centers designate medical resources more efficiently and better support clinicians to determine the proper clinical treatment.},
+  isbn = {978-3-030-87233-5 978-3-030-87234-2},
+  langid = {english},
+  file = {/Users/kylebeggs/Zotero/storage/BWRGRNXC/Liu et al. - 2021 - Beyond COVID-19 Diagnosis Prognosis with Hierarch.pdf}
+}
+
+@article{ronnebergerUNetConvolutionalNetworks2015,
+  title = {U-{{Net}}: {{Convolutional Networks}} for {{Biomedical Image Segmentation}}},
+  shorttitle = {U-{{Net}}},
+  author = {Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+  year = {2015},
+  month = may,
+  journal = {arXiv:1505.04597 [cs]},
+  eprint = {1505.04597},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  abstract = {There is large consent that successful training of deep networks requires many thousand annotated training samples. In this paper, we present a network and training strategy that relies on the strong use of data augmentation to use the available annotated samples more efficiently. The architecture consists of a contracting path to capture context and a symmetric expanding path that enables precise localization. We show that such a network can be trained end-to-end from very few images and outperforms the prior best method (a sliding-window convolutional network) on the ISBI challenge for segmentation of neuronal structures in electron microscopic stacks. Using the same network trained on transmitted light microscopy images (phase contrast and DIC) we won the ISBI cell tracking challenge 2015 in these categories by a large margin. Moreover, the network is fast. Segmentation of a 512x512 image takes less than a second on a recent GPU. The full implementation (based on Caffe) and the trained networks are available at http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition},
+  file = {/Users/kylebeggs/Zotero/storage/KPRKT547/Ronneberger et al. - 2015 - U-Net Convolutional Networks for Biomedical Image.pdf}
+}
+
+@article{shaoWeaklySupervisedRegistration2021,
+  title = {Weakly {{Supervised Registration}} of {{Prostate MRI}} and {{Histopathology Images}}},
+  author = {Shao, Wei and Bhattacharya, Indrani and Soerensen, Simon J. C. and Kunder, Christian A. and Wang, Jeffrey B. and Fan, Richard E. and Ghanouni, Pejman and Brooks, James D. and Sonn, Geoffrey A. and Rusu, Mirabela},
+  year = {2021},
+  doi = {10.1007/978-3-030-87202-1_10},
+  abstract = {The interpretation of prostate MRI suffers from low agreement across radiologists due to the subtle differences between cancer and normal tissue. Image registration addresses this issue by accurately mapping the ground-truth cancer labels from surgical histopathology images onto MRI. Cancer labels achieved by image registration can be used to improve radiologists' interpretation of MRI by training deep learning models for early detection of prostate cancer. A major limitation of current automated registration approaches is that they require manual prostate segmentations, which is a time-consuming task, prone to errors. This paper presents a weakly supervised approach for affine and deformable registration of MRI and histopathology images without requiring prostate segmentations. We used manual prostate segmentations and mono-modal synthetic image pairs to train our registration networks to align prostate boundaries and local prostate features. Although prostate segmentations were used during the training of the network, such segmentations were not needed when registering unseen images at inference time. We trained and validated our registration network with 135 and 10 patients from an internal cohort, respectively. We tested the performance of our method using 16 patients from the internal cohort and 22 patients from an external cohort. The results show that our weakly supervised method has achieved significantly higher registration accuracy than a state-of-the-art method run without prostate segmentations. Our deep learning framework will ease the registration of MRI and histopathology images by obviating the need for prostate segmentations.},
+  langid = {english},
+  file = {/Users/kylebeggs/Zotero/storage/MCRAXP3E/Shao et al. - 2021 - Medical Image Computing and Computer Assisted Inte.pdf;/Users/kylebeggs/Zotero/storage/LXISX5JE/10.html}
+}
+
+@inproceedings{wangAnnotationEfficientCellCounting2021,
+  title = {Annotation-{{Efficient Cell Counting}}},
+  author = {Wang, Zuhui and Yin, Zhaozheng},
+  year = {2021},
+  doi = {10.1007/978-3-030-87237-3_39},
+  abstract = {Recent advances in deep learning have achieved impressive results on microscopy cell counting tasks. The success of deep learning models usually needs sufficient training data with manual annotations, which can be time-consuming and costly. In this paper, we propose an annotation-efficient cell counting approach which injects cell counting networks into an active learning framework. By designing a multi-task learning in the cell counter network model, we leverage unlabeled data for feature representation learning and use deep clustering to group unlabeled data. Rather than labeling every cell in each training image, the deep active learning only suggests the most uncertain, diverse, representative and rare image regions for annotation. Evaluated on four widely used cell counting datasets, our cell counter trained by a small subset of training data suggested by the deep active learning, achieves superior performance compared to state-of-the-arts with full training or other suggestive annotations. Our code is available at https://github.com/cvbmi-research/AnnotationEfficient-CellCounting.},
+  isbn = {978-3-030-87236-6},
+  langid = {english},
+  file = {/Users/kylebeggs/Zotero/storage/HKJE3C7C/Wang and Yin - 2021 - Medical Image Computing and Computer Assisted Inte.pdf;/Users/kylebeggs/Zotero/storage/8GSXKK8R/10.html}
+}
+
+@inproceedings{wuFederatedContrastiveLearning2021,
+  title = {Federated {{Contrastive Learning}} for {{Volumetric Medical Image Segmentation}}},
+  booktitle = {Medical {{Image Computing}} and {{Computer Assisted Intervention}} \textendash{} {{MICCAI}} 2021},
+  author = {Wu, Yawen and Zeng, Dewen and Wang, Zhepeng and Shi, Yiyu and Hu, Jingtong},
+  editor = {{de Bruijne}, Marleen and Cattin, Philippe C. and Cotin, St{\'e}phane and Padoy, Nicolas and Speidel, Stefanie and Zheng, Yefeng and Essert, Caroline},
+  year = {2021},
+  pages = {367--377},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-030-87199-4_35},
+  abstract = {Supervised deep learning needs a large amount of labeled data to achieve high performance. However, in medical imaging analysis, each site may only have a limited amount of data and labels, which makes learning ineffective. Federated learning (FL) can help in this regard by learning a shared model while keeping training data local for privacy. Traditional FL requires fully-labeled data for training, which is inconvenient or sometimes infeasible to obtain due to high labeling cost and the requirement of expertise. Contrastive learning (CL), as a self-supervised learning approach, can effectively learn from unlabeled data to pre-train a neural network encoder, followed by fine-tuning for downstream tasks with limited annotations. However, when adopting CL in FL, the limited data diversity on each client makes federated contrastive learning (FCL) ineffective. In this work, we propose an FCL framework for volumetric medical image segmentation with limited annotations. More specifically, we exchange the features in the FCL pre-training process such that diverse contrastive data are provided to each site for effective local CL while keeping raw data private. Based on the exchanged features, global structural matching further leverages the structural similarity to align local features to the remote ones such that a unified feature space can be learned among different sites. Experiments on a cardiac MRI dataset show the proposed framework substantially improves the segmentation performance compared with state-of-the-art techniques.},
+  isbn = {978-3-030-87199-4},
+  langid = {english},
+  file = {/Users/kylebeggs/Zotero/storage/7UYMV7Y2/Wu et al. - 2021 - Federated Contrastive Learning for Volumetric Medi.pdf}
+}
+
+@inproceedings{yangTAutoMLAutomatedMachine2021,
+  title = {T-{{AutoML}}: {{Automated Machine Learning}} for {{Lesion Segmentation}} Using {{Transformers}} in {{3D Medical Imaging}}},
+  shorttitle = {T-{{AutoML}}},
+  booktitle = {2021 {{IEEE}}/{{CVF International Conference}} on {{Computer Vision}} ({{ICCV}})},
+  author = {Yang, Dong and Myronenko, Andriy and Wang, Xiaosong and Xu, Ziyue and Roth, Holger R. and Xu, Daguang},
+  year = {2021},
+  month = oct,
+  pages = {3942--3954},
+  publisher = {{IEEE}},
+  address = {{Montreal, QC, Canada}},
+  doi = {10.1109/ICCV48922.2021.00393},
+  abstract = {Lesion segmentation in medical imaging has been an important topic in clinical research. Researchers have proposed various detection and segmentation algorithms to address this task. Recently, deep learning-based approaches have significantly improved the performance over conventional methods. However, most state-of-the-art deep learning methods require the manual design of multiple network components and training strategies. In this paper, we propose a new automated machine learning algorithm, TAutoML, which not only searches for the best neural architecture, but also finds the best combination of hyperparameters and data augmentation strategies simultaneously. The proposed method utilizes the modern transformer model, which is introduced to adapt to the dynamic length of the search space embedding and can significantly improve the ability of the search. We validate T-AutoML on several large-scale public lesion segmentation data-sets and achieve state-of-the-art performance.},
+  isbn = {978-1-66542-812-5},
+  langid = {english},
+  file = {/Users/kylebeggs/Zotero/storage/9T6HTUC8/Yang et al. - 2021 - T-AutoML Automated Machine Learning for Lesion Se.pdf}
+}
+
+
