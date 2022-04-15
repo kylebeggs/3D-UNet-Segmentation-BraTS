@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1650061579 "main.aux" "main.bbl" "main" 1650061582
+["bibtex main"] 1650061579 "main.aux" "main.bbl" "main" 1650061853
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "UCF-course.bib" 1650056156 23909 68a51849d8d0553f03dc2784f78f5d40 ""
-  "main.aux" 1650061582 3938 1a115f3a09d21d249415e59a51962ad3 "pdflatex"
+  "main.aux" 1650061852 3938 1a115f3a09d21d249415e59a51962ad3 "pdflatex"
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1650061579 "main.tex" "main.pdf" "main" 1650061582
+  "main.bbl"
+["pdflatex"] 1650061850 "main.tex" "main.pdf" "main" 1650061853
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -122,12 +122,12 @@
   "images/training_loss.png" 1650059897 509903 bda8d4fb59e1ad10c9b6e79342bc75ae ""
   "images/visualization1.png" 1650057784 2118015 63d80575cc7263d83141ffa55420035b ""
   "images/visualization2.png" 1650058891 1879775 3eb3ee8b908aa74f777890b0ae4ab8ed ""
-  "main.aux" 1650061582 3938 1a115f3a09d21d249415e59a51962ad3 "pdflatex"
+  "main.aux" 1650061852 3938 1a115f3a09d21d249415e59a51962ad3 "pdflatex"
   "main.bbl" 1650061579 1461 f9a0cd90f07cad3738b942fb9d17c7c0 "bibtex main"
-  "main.brf" 1650061582 75 17ca4e83ae6034d361504edc6ec5afb9 "pdflatex"
-  "main.tex" 1650061573 6628 406b920fca8d884a93bf1b78557b64bd ""
+  "main.brf" 1650061852 75 17ca4e83ae6034d361504edc6ec5afb9 "pdflatex"
+  "main.tex" 1650061850 6592 8254f24888a93a3a8d06e984e90999b7 ""
   (generated)
   "main.brf"
-  "main.aux"
   "main.log"
+  "main.aux"
   "main.pdf"
